@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 15px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      background-color: #f2f2f2;
+      padding: 16px;
+    }
+
+    .login-link {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" id="register-container">
+  <form action="register.php" method="post">
+    <h2>Register</h2>
+    <label for="nama"><b>Nama</b></label>
+    <input type="text" placeholder="Enter Nama" name="nama" required>
+
+    <label for="npm"><b>NPM</b></label>
+    <input type="text" placeholder="Enter NPM" name="npm" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <input type="submit" value="Register">
+  </form>
+  <div class="login-link">
+    <p>Sudah punya akun? <a href="index.html">Login</a></p>
+  </div>
+</div>
+
+</body>
+</html>
